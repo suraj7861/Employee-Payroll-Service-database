@@ -37,12 +37,17 @@ select * from employee_payroll_service123;
 #UC7----find sum avg mim max 
 select gender, sum(salary) from employee_payroll_service123
        where gender = 'M' group by gender;
+       
 select gender, avg(salary) from employee_payroll_service123
 	   where gender = 'M' group by gender;
+       
 select name,min(salary) from employee_payroll_service123
        where gender = 'M' group by gender;
+       
 select name,max(salary) from employee_payroll_service123
        where gender = 'M' group by gender;
+       
+select count(*) from employee_payroll_service123;
 
 
 
