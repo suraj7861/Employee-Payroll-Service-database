@@ -96,3 +96,7 @@ update employee_payroll_service123 set Basic_pay = 40000, Deductions = 4000,
 	   Taxable_pay = 2000, Income_tax = 500, Net_Pay = 36000
        where name = 'Charlie';
 select * from employee_payroll_service123;
+
+alter table employee_payroll_service123 
+	  drop column salary;
+select * from employee_payroll_service123;
